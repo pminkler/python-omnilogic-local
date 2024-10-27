@@ -1,0 +1,56 @@
+### Set Heater Temperature
+POST http://localhost:5010/set_heater_temp
+Content-Type: application/json
+
+{
+  "body_of_water": "pool",
+  "temperature": 85
+}
+
+### Set Filter Pump Speed
+POST http://localhost:5010/set_filter_pump_speed
+Content-Type: application/json
+
+{
+  "body_of_water": "pool",
+  "speed": 75
+}
+
+### Toggle Relay (Waterfall or Blower)
+POST http://localhost:5010/set_relay
+Content-Type: application/json
+
+{
+  "relay_name": "waterfall",
+  "state": "on"
+}
+
+
+### Dump Configuration Data
+GET http://localhost:5010/dump_config
+
+
+### Dump Telemetry Data
+GET http://localhost:5010/dump_telemetry
+
+
+### Inspect Groups and Relays
+GET http://localhost:5010/inspect_groups_relays
+
+
+### Trigger a theme for a group
+POST http://localhost:5010/trigger_theme
+Content-Type: application/json
+
+{
+  "group_id": 43,
+  "start": 0,
+  "countdown": false,
+  "start_time_hours": 0,
+  "start_time_minutes": 0,
+  "end_time_hours": 0,
+  "end_time_minutes": 0,
+  "days_active": 0,
+  "recurring": false
+}
+

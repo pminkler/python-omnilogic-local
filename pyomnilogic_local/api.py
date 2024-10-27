@@ -175,6 +175,57 @@ class OmniLogicAPI:
 
         return await self.async_send_message(MessageType.SET_HEATER_COMMAND, req_body, False)
 
+    async def async_run_group_cmd(
+            self,
+            group_id: int,
+            data: int = 1,
+            is_countdown_timer: bool = False,
+            start_time_hours: int = 0,
+            start_time_minutes: int = 0,
+            end_time_hours: int = 0,
+            end_time_minutes: int = 0,
+            days_active: int = 0,
+            recurring: bool = False
+    ) -> None:
+        """Trigger a theme for a specific group using RunGroupCmd.
+
+        Args:
+            group_id (int): The group ID representing the theme to run.
+            data (int): Data value (1 to start, 0 to stop).
+            is_countdown_timer (bool): If a countdown timer should be used.
+            start_time_hours (int): Start time in hours.
+            start_time_minutes (int): Start time in minutes.
+            end_time_hours (int): End time in hours.
+            end_time_minutes (int): End time in minutes.
+            days_active (int): Days the theme is active.
+            recurring (bool): Whether the theme should be recurring.
+        """
+
+        # Create the XML request body
+        body_element = ET.Element("Request", {"xmlns": "http://nextgen.hayward.com/api"})
+
+        # Adding command name
+        name_element = ET.SubElement(body_element, "Name")
+        name_element.text = "RunGroupCmd"
+
+        # Adding parameters
+        parameters_element = ET.SubElement(body_element, "Parameters")
+        ET.SubElement(parameters_element, "Parameter", name="GroupID", dataType="int", alias="EquipmentID").text = str(group_id)
+        ET.SubElement(parameters_element, "Parameter", name="Data", dataType="int").text = str(data)
+        ET.SubElement(parameters_element, "Parameter", name="IsCountDownTimer", dataType="bool").text = str(int(is_countdown_timer))
+        ET.SubElement(parameters_element, "Parameter", name="StartTimeHours", dataType="int").text = str(start_time_hours)
+        ET.SubElement(parameters_element, "Parameter", name="StartTimeMinutes", dataType="int").text = str(start_time_minutes)
+        ET.SubElement(parameters_element, "Parameter", name="EndTimeHours", dataType="int").text = str(end_time_hours)
+        ET.SubElement(parameters_element, "Parameter", name="EndTimeMinutes", dataType="int").text = str(end_time_minutes)
+        ET.SubElement(parameters_element, "Parameter", name="DaysActive", dataType="int").text = str(days_active)
+        ET.SubElement(parameters_element, "Parameter", name="Recurring", dataType="bool").text = str(int(recurring))
+
+        # Convert XML to string
+        req_body = ET.tostring(body_element, xml_declaration=True, encoding="unicode")
+
+        # Send the command using MessageType.RUN_GROUP_CMD (msg_type 317)
+        return await self.async_send_message(MessageType.RUN_GROUP_CMD, req_body, False)
+
     async def async_set_solar_heater(self, pool_id: int, equipment_id: int, temperature: int, unit: str) -> None:
         """Set the solar set point for a heater on the Omni.
 

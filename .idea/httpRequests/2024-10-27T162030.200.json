@@ -1,0 +1,34 @@
+{
+  "config": {
+    "backyard": {
+      "bow": [
+        "system_id=1 name='Pool' bow_id=1 omni_type=<OmniType.BOW: 'BodyOfWater'> type=<BodyOfWaterType.POOL: 'BOW_POOL'> supports_spillover='no' filter=[MSPFilter(system_id=3, name='Filter Pump', bow_id=1, omni_type=<OmniType.FILTER: 'Filter'>, type=<FilterType.VARIABLE_SPEED: 'FMT_VARIABLE_SPEED_PUMP'>, max_percent=100, min_percent=56, max_rpm=3450, min_rpm=1900, priming_enabled='yes', low_speed=56, medium_speed=85, high_speed=100)] relay=[MSPRelay(system_id=29, name='Waterfall', bow_id=1, omni_type=<OmniType.RELAY: 'Relay'>, type=<RelayType.VALVE_ACTUATOR: 'RLY_VALVE_ACTUATOR'>, function=<RelayFunction.WATERFALL: 'RLY_WATERFALL'>)] heater=MSPVirtualHeater(system_id=4, name=None, bow_id=1, omni_type=<OmniType.VIRT_HEATER: 'VirtualHeater'>, enabled='no', set_point=77, solar_set_point=None, max_temp=104, min_temp=55, heater_equipment=[MSPHeaterEquip(system_id=5, name='heater', bow_id=1, omni_type=<OmniType.HEATER_EQUIP: 'Heater-Equipment'>, type='PET_HEATER', heater_type=<HeaterType.GAS: 'HTR_GAS'>, enabled='yes', min_filter_speed=85, sensor_id=-1, supports_cooling=None)]) sensor=[MSPSensor(system_id=18, name='WaterSensor', bow_id=1, omni_type=<OmniType.SENSOR: 'Sensor'>, type=<SensorType.WATER_TEMP: 'SENSOR_WATER_TEMP'>, units=<SensorUnits.FAHRENHEIT: 'UNITS_FAHRENHEIT'>), MSPSensor(system_id=20, name='FlowSensor', bow_id=1, omni_type=<OmniType.SENSOR: 'Sensor'>, type=<SensorType.FLOW: 'SENSOR_FLOW'>, units=<SensorUnits.ACTIVE_INACTIVE: 'UNITS_ACTIVE_INACTIVE'>)] colorlogic_light=[MSPColorLogicLight(system_id=9, name='Color Lights', bow_id=1, omni_type=<OmniType.CL_LIGHT: 'ColorLogic-Light'>, type=<ColorLogicLightType.UCL: 'COLOR_LOGIC_UCL'>, v2_active='yes', effects=[<ColorLogicShow.VOODOO_LOUNGE: 0>, <ColorLogicShow.DEEP_BLUE_SEA: 1>, <ColorLogicShow.ROYAL_BLUE: 2>, <ColorLogicShow.AFTERNOON_SKY: 3>, <ColorLogicShow.AQUA_GREEN: 4>, <ColorLogicShow.EMERALD: 5>, <ColorLogicShow.CLOUD_WHITE: 6>, <ColorLogicShow.WARM_RED: 7>, <ColorLogicShow.FLAMINGO: 8>, <ColorLogicShow.VIVID_VIOLET: 9>, <ColorLogicShow.SANGRIA: 10>, <ColorLogicShow.TWILIGHT: 11>, <ColorLogicShow.TRANQUILITY: 12>, <ColorLogicShow.GEMSTONE: 13>, <ColorLogicShow.USA: 14>, <ColorLogicShow.MARDI_GRAS: 15>, <ColorLogicShow.COOL_CABARET: 16>, <ColorLogicShow.YELLOW: 17>, <ColorLogicShow.ORANGE: 18>, <ColorLogicShow.GOLD: 19>, <ColorLogicShow.MINT: 20>, <ColorLogicShow.TEAL: 21>, <ColorLogicShow.BURNT_ORANGE: 22>, <ColorLogicShow.PURE_WHITE: 23>, <ColorLogicShow.CRISP_WHITE: 24>, <ColorLogicShow.WARM_WHITE: 25>, <ColorLogicShow.BRIGHT_YELLOW: 26>])] pump=None chlorinator=MSPChlorinator(system_id=6, name='Chlorinator', bow_id=1, omni_type=<OmniType.CHLORINATOR: 'Chlorinator'>, enabled='yes', timed_percent=65, superchlor_timeout=24, dispenser_type=<ChlorinatorDispenserType.SALT: 'SALT_DISPENSING'>, chlorinator_equipment=[MSPChlorinatorEquip(system_id=7, name='Chlorinator1', bow_id=1, omni_type=<OmniType.CHLORINATOR_EQUIP: 'Chlorinator-Equipment'>, enabled='yes')]) csad=None",
+        "system_id=2 name='Spa' bow_id=2 omni_type=<OmniType.BOW: 'BodyOfWater'> type=<BodyOfWaterType.SPA: 'BOW_SPA'> supports_spillover='no' filter=[MSPFilter(system_id=11, name='Filter Pump', bow_id=2, omni_type=<OmniType.FILTER: 'Filter'>, type=<FilterType.VARIABLE_SPEED: 'FMT_VARIABLE_SPEED_PUMP'>, max_percent=100, min_percent=56, max_rpm=3450, min_rpm=1900, priming_enabled='yes', low_speed=56, medium_speed=56, high_speed=100)] relay=[MSPRelay(system_id=16, name='Blower', bow_id=2, omni_type=<OmniType.RELAY: 'Relay'>, type=<RelayType.HIGH_VOLTAGE: 'RLY_HIGH_VOLTAGE_RELAY'>, function=<RelayFunction.BLOWER: 'RLY_BLOWER'>)] heater=MSPVirtualHeater(system_id=12, name=None, bow_id=2, omni_type=<OmniType.VIRT_HEATER: 'VirtualHeater'>, enabled='no', set_point=98, solar_set_point=104, max_temp=104, min_temp=55, heater_equipment=[MSPHeaterEquip(system_id=13, name='heater', bow_id=2, omni_type=<OmniType.HEATER_EQUIP: 'Heater-Equipment'>, type='PET_HEATER', heater_type=<HeaterType.GAS: 'HTR_GAS'>, enabled='yes', min_filter_speed=85, sensor_id=-1, supports_cooling=None)]) sensor=[MSPSensor(system_id=19, name='WaterSensor', bow_id=2, omni_type=<OmniType.SENSOR: 'Sensor'>, type=<SensorType.WATER_TEMP: 'SENSOR_WATER_TEMP'>, units=<SensorUnits.FAHRENHEIT: 'UNITS_FAHRENHEIT'>), MSPSensor(system_id=21, name='FlowSensor', bow_id=2, omni_type=<OmniType.SENSOR: 'Sensor'>, type=<SensorType.FLOW: 'SENSOR_FLOW'>, units=<SensorUnits.ACTIVE_INACTIVE: 'UNITS_ACTIVE_INACTIVE'>)] colorlogic_light=None pump=None chlorinator=MSPChlorinator(system_id=14, name='Chlorinator', bow_id=2, omni_type=<OmniType.CHLORINATOR: 'Chlorinator'>, enabled='yes', timed_percent=28, superchlor_timeout=24, dispenser_type=<ChlorinatorDispenserType.SALT: 'SALT_DISPENSING'>, chlorinator_equipment=[MSPChlorinatorEquip(system_id=15, name='Chlorinator1', bow_id=2, omni_type=<OmniType.CHLORINATOR_EQUIP: 'Chlorinator-Equipment'>, enabled='yes')]) csad=None"
+      ],
+      "bow_id": null,
+      "colorlogic_light": null,
+      "name": "Backyard",
+      "omni_type": {
+        "__objclass__": "<enum 'OmniType'>",
+        "_name_": "BACKYARD",
+        "_sort_order_": "0",
+        "_value_": "Backyard"
+      },
+      "relay": null,
+      "sensor": [
+        "system_id=17 name='AirSensor' bow_id=None omni_type=<OmniType.SENSOR: 'Sensor'> type=<SensorType.AIR_TEMP: 'SENSOR_AIR_TEMP'> units=<SensorUnits.FAHRENHEIT: 'UNITS_FAHRENHEIT'>"
+      ],
+      "system_id": 0
+    },
+    "system": {
+      "omni_type": {
+        "__objclass__": "<enum 'OmniType'>",
+        "_name_": "SYSTEM",
+        "_sort_order_": "18",
+        "_value_": "System"
+      },
+      "units": "Standard",
+      "vsp_speed_format": "RPM"
+    }
+  }
+}

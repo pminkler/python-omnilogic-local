@@ -1,0 +1,125 @@
+POST http://localhost:5010/trigger_theme
+Content-Type: application/json
+Content-Length: 198
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "group_id": 43,
+  "start": 0,
+  "countdown": false,
+  "start_time_hours": 0,
+  "start_time_minutes": 0,
+  "end_time_hours": 0,
+  "end_time_minutes": 0,
+  "days_active": 0,
+  "recurring": false
+}
+
+<> 2024-10-27T163031.200.json
+
+###
+
+POST http://localhost:5010/trigger_theme
+Content-Type: application/json
+Content-Length: 198
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "group_id": 43,
+  "start": 1,
+  "countdown": false,
+  "start_time_hours": 0,
+  "start_time_minutes": 0,
+  "end_time_hours": 0,
+  "end_time_minutes": 0,
+  "days_active": 0,
+  "recurring": false
+}
+
+<> 2024-10-27T162945.500.json
+
+###
+
+POST http://localhost:5010/trigger_theme
+Content-Type: application/json
+Content-Length: 198
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "group_id": 43,
+  "start": 1,
+  "countdown": false,
+  "start_time_hours": 0,
+  "start_time_minutes": 0,
+  "end_time_hours": 0,
+  "end_time_minutes": 0,
+  "days_active": 0,
+  "recurring": false
+}
+
+<> 2024-10-27T162907.500.json
+
+###
+
+POST http://localhost:5010/trigger_theme
+Content-Type: application/json
+Content-Length: 198
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "group_id": 43,
+  "start": 1,
+  "countdown": false,
+  "start_time_hours": 0,
+  "start_time_minutes": 0,
+  "end_time_hours": 0,
+  "end_time_minutes": 0,
+  "days_active": 0,
+  "recurring": false
+}
+
+<> 2024-10-27T162857.500.json
+
+###
+
+POST http://localhost:5010/trigger_theme
+Content-Type: application/json
+Content-Length: 198
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "group_id": 43,
+  "start": 1,
+  "countdown": false,
+  "start_time_hours": 0,
+  "start_time_minutes": 0,
+  "end_time_hours": 0,
+  "end_time_minutes": 0,
+  "days_active": 0,
+  "recurring": false
+}
+
+<> 2024-10-27T162706.500.json
+
+###
+
+GET http://localhost:5010/dump_config
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2024.2.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-27T162030.200.json
+
+###
+
